@@ -1,8 +1,61 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url('src/Imagenes/Captura de pantalla 2024-07-09 211415.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.app-container {
+  background-color: rgba(95, 2, 49, 0);
+  padding: 15px;
+  border-radius: 10px;
+  width: 150%;
+  max-width: 800px;
+}
+
+.form-container {
+  background-color: rgba(171, 3, 101, 0.677);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.reminder-card {
+  background-color: rgba(197, 2, 54, 0.621);
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 2em;
+}
+
+.reminder-card.important {
+  border: 2px solid red;
+}
+
+.important-text {
+  color: red;
+}
+
+.action-button {
+  margin-right: 10px;
 }
 
 .logo {
@@ -11,9 +64,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
